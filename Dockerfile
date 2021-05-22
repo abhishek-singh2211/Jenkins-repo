@@ -7,4 +7,5 @@ COPY app.js /node_app/app.js
 COPY package.json /node_app/package.json
 COPY test.js /node_app/test.js
 EXPOSE 3000
+RUN node app.js
 CMD ["/bin/bash"]
