@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt-get update && apt-get install nodejs npm -y
+RUN apt-get update && apt-get install nodejs -y
 RUN mkdir -p /node_app
 RUN touch /node_app/app.js /node_app/package.json /node_app/test.js
 WORKDIR /node_app
